@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>HTML/CSS Proovitöö</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-bar-container">
+        Invoices
+        <div class="title-bar-buttons">
+          <button class="export-button">
+            <img src="./icons/arrow-up.svg" />Export
+          </button>
+          <button class="new-button"><img src="./icons/new.svg" />New</button>
+          <button class="title-bar-button">
+            <img src="./icons/filter.svg" />
+          </button>
+          <button class="title-bar-button">
+            <img src="./icons/dots.svg" />
+          </button>
+        </div>
+      </div>
+
+      <div class="content-container">
+        <div class="tables-container">
+          <div class="pagination-container">
+            <div class="dropdown-container">
+              Results per page
+              <div class="dropdown">
+                20
+                <img src="./icons/down.svg" />
+              </div>
+            </div>
+
+            <!--             <label class="dropdown-container" for="results"
+              >Results per page
+              <select class="dropdown" name="results">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="50">20</option>
+              </select>
+            </label> -->
+
+            <div class="pagination-buttons">
+              <button class="pagination-button" disabled>
+                <img src="./icons/left.svg" />
+              </button>
+              1
+              <button class="pagination-button button-active">
+                <img src="./icons/right.svg" />
+              </button>
+            </div>
+
+            <!-- <label class="dropdown-container" for="pages"
+              >Page
+              <select class="dropdown" name="pages">
+                <option value="10">10</option>
+                <option value="20" selected>20</option>
+                <option value="50">20</option>
+              </select>
+            </label> -->
+
+            <div class="dropdown-container">
+              Page
+              <div class="dropdown">
+                20
+                <img src="./icons/down.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="table-header table-row">
+            <div class="bg-selector-all">
+              <input type="checkbox" />
+            </div>
+            <div>Type</div>
+            <div>Date</div>
+            <div>Customer</div>
+            <div>Location</div>
+            <div>State</div>
+            <div>Total</div>
+            <div></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Receipt
+              <p class="order-number">#100048</p>
+            </div>
+            <div>21.10.2022</div>
+            <div>Lydia Dias</div>
+            <div>Location #12</div>
+            <div><p class="label in-progress">In progress</p></div>
+            <div>129.00 €</div>
+            <div><img class="table-menu-icon" src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Receipt
+              <p class="order-number">#100048</p>
+            </div>
+            <div>
+              21.10.2022
+              <p class="label error">Due 2 days ago</p>
+            </div>
+            <div>Livia Siphon</div>
+            <div>Location #12</div>
+            <div><p class="label normal">Pending</p></div>
+            <div>
+              4147.20 €
+              <p class="label error">Unpaid 200.29 €</p>
+            </div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Invoice-Waybill
+              <p class="order-number">#100048</p>
+            </div>
+            <div>21.10.2022</div>
+            <div>Tatiana George</div>
+            <div>Location #12</div>
+            <div><p class="label success">Success</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" checked />
+            </div>
+            <div>
+              Invoice-Waybill
+              <p class="order-number">#100048</p>
+            </div>
+            <div>21.10.2022</div>
+            <div>Dulce Lipshutz</div>
+            <div>Location #12</div>
+            <div><p class="label normal">Complete</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Prepayment inv.
+              <p class="order-number">#100048</p>
+            </div>
+            <div>21.10.2022</div>
+            <div>Paityn Philips</div>
+            <div>Location #12</div>
+            <div><p class="label in-progress">In progress</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" checked />
+            </div>
+            <div>
+              Prepayment inv.
+              <p class="order-number">#100048</p>
+            </div>
+            <div>21.10.2022</div>
+            <div>Jorgyn Mango</div>
+            <div>Location #12</div>
+            <div><p class="label normal">Pending</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Receipt
+              <p class="order-number">#100048</p>
+            </div>
+            <div>
+              21.10.2022
+              <p class="label error">Due 2 days ago</p>
+            </div>
+            <div>Paityn Workman</div>
+            <div>Location #12</div>
+            <div><p class="label success">Success</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Receipt
+              <p class="order-number">#100048</p>
+            </div>
+            <div>
+              21.10.2022
+              <p class="label error">Due 2 days ago</p>
+            </div>
+            <div>Davis Dorwart</div>
+            <div>Location #12</div>
+            <div><p class="label normal">Complete</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Receipt
+              <p class="order-number">#100048</p>
+            </div>
+            <div>21.10.2022</div>
+            <div>Craig Workman</div>
+            <div>Location #12</div>
+            <div><p class="label normal">Complete</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+
+          <div class="table-row">
+            <div class="bg-selector">
+              <input type="checkbox" />
+            </div>
+            <div>
+              Receipt
+              <p class="order-number">#100048</p>
+            </div>
+            <div>21.10.2022</div>
+            <div>Alfredo George</div>
+            <div>Location #12</div>
+            <div><p class="label normal">Complete</p></div>
+            <div>129.00 €</div>
+            <div><img src="./icons/dots.svg" /></div>
+          </div>
+        </div>
+
+        <div class="customers-container">
+          <div class="customers-header-container">
+            Customers
+            <button class="customer-add-button">
+              <img src="./icons/add-user.svg" />Add
+            </button>
+          </div>
+          <div class="customers-sort-container">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+            <div>I</div>
+            <div>J</div>
+            <div>K</div>
+            <div>L</div>
+            <div>M</div>
+            <div>N</div>
+            <div>O</div>
+            <div>P</div>
+            <div>Q</div>
+            <div>R</div>
+            <div>S</div>
+            <div>T</div>
+            <div>U</div>
+            <div>V</div>
+            <div>W</div>
+            <div>X</div>
+            <div>Y</div>
+            <div>Z</div>
+          </div>
+          <div class="customers-search-container">
+            <div class="search-input">
+              <img src="./icons/search.svg" />
+              <input class="search-text" type="text" />
+            </div>
+            <button class="search-button">Search</button>
+          </div>
+          <div class="customers-list-container">
+            <ul class="customers-list">
+              <li>Marathon Oil Corp.</li>
+              <li>Sealed Air</li>
+              <li>Southern Company</li>
+              <li>Atmos Energy</li>
+              <li>Equifax Inc.</li>
+              <li>Kansas City Southern</li>
+              <li>Fidelity National Information Services</li>
+              <li>Colgate-Palmolive</li>
+              <li>Air Products & Chemicals Inc</li>
+              <li>Intuitive Surgical Inc.</li>
+              <li>Quest Diagnostics</li>
+              <li>Crown Castle International Corp.</li>
+              <li>News Corp. Class A</li>
+              <li>Federal Realty Investment Trust</li>
+              <li>Humana Inc.</li>
+            </ul>
+          </div>
+          <div class="customers-modal">
+            <div class="modal-title">
+              Add customers
+              <img src="./icons/close.svg" />
+            </div>
+            <p class="modal-info">
+              You can add customers by pessing the Add + button in the corner or
+              by importing your clients from a CSV file
+            </p>
+            <button class="modal-button">
+              <img src="./icons/cloud.svg" />Import customers
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

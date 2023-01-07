@@ -503,7 +503,7 @@ Table row background color changer code and other changes.
 First checkbox does not select all rows yet.
 */
 
-.table-row > .bg-selector[type="checkbox"]:checked {
+.table-row:has(.bg-selector > input:checked) {
   background-color: #e8f1fe;
 }
 
